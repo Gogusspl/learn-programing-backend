@@ -18,7 +18,9 @@ public class Post {
     @Column(columnDefinition = "TEXT")
     private String code;
 
-    private String category;
+    private String language;
+
+    private String codeLanguage;
 
     private String author;
 
@@ -47,9 +49,13 @@ public class Post {
 
     public void setCode(String code) { this.code = code; }
 
-    public String getCategory() { return category; }
+    public String getLanguage() { return language; }
 
-    public void setCategory(String category) { this.category = category; }
+    public void setLanguage(String language) { this.language = language; }
+
+    public String getCodeLanguage() { return codeLanguage; }
+
+    public void setCodeLanguage(String codeLanguage) { this.codeLanguage = codeLanguage; }
 
     public String getAuthor() { return author; }
 
